@@ -108,7 +108,8 @@ open class DisplayScreen :
                 R.string.category_name_display_controls,
             ) order -150 +=
                 {
-                    +PeakRefreshRateSwitchPreference()
+                    // The XML peak-rate list is retained by this incomplete hybrid hierarchy.
+                    // Do not bind a boolean switch to the same system setting as that selector.
                     if (Flags.catalystScreensaver()) +ScreensaverScreen.KEY
                 }
         }

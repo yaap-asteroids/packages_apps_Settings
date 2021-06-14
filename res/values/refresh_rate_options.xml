@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 YAAP; licensed under the Apache License, Version 2.0. -->
+<resources>
+    <string name="refresh_rate_cap_title">Maximum refresh rate</string>
+    <string name="refresh_rate_automatic">Automatic</string>
+    <string name="refresh_rate_automatic_summary">Automatic (device default policy)</string>
+    <string name="refresh_rate_unrestricted">Maximum available (%1$s)</string>
+    <string name="refresh_rate_external_override">External refresh rate override</string>
+    <string name="refresh_rate_hz">%1$s Hz</string>
+    <string name="refresh_rate_cap_summary">%1$s. Lower rates may be used to save power; battery saver and thermal limits still apply.</string>
+</resources>
