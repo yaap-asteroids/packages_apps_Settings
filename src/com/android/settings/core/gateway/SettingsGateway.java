@@ -236,6 +236,7 @@ public class SettingsGateway {
      */
     public static final String[] ENTRY_FRAGMENTS = {
             AdvancedConnectedDeviceDashboardFragment.class.getName(),
+            com.android.settings.applications.AppManagePlayIntegrityApiFragment.class.getName(),
             CreateShortcut.class.getName(),
             BluetoothPairingDetail.class.getName(),
             BluetoothDashboardFragment.class.getName(),
