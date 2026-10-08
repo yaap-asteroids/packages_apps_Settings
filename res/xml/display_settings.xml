@@ -133,6 +133,57 @@
 
     </PreferenceCategory>
 
+    <!-- One UI style extras. SystemUI reads each as a Settings.Secure switch, on unless 0. -->
+    <PreferenceCategory
+        android:key="category_oneui"
+        android:title="@string/oneui_category_title">
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="systemui_dynamic_island"
+            android:title="@string/dynamic_island_title"
+            android:summary="@string/dynamic_island_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="systemui_island_notifications"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_notifications_title"
+            android:summary="@string/island_notifications_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="systemui_island_glow"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_glow_title"
+            android:summary="@string/island_glow_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_qs_card"
+            android:title="@string/oneui_qs_card_title"
+            android:summary="@string/oneui_qs_card_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_qs_tile_labels"
+            android:title="@string/oneui_qs_tile_labels_title"
+            android:summary="@string/oneui_qs_tile_labels_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_qs_buttons_on_top"
+            android:title="@string/oneui_qs_buttons_on_top_title"
+            android:summary="@string/oneui_qs_buttons_on_top_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_brightness_pill"
+            android:title="@string/oneui_brightness_pill_title"
+            android:summary="@string/oneui_brightness_pill_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:title="@string/category_name_color"
         android:order="-170">
