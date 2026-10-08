@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The yaap-asteroids Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Display: how the notification shade and other system surfaces sit over the screen -->
+    <string name="surface_style_title">Transparency and blur</string>
+    <string name="surface_style_blur">Translucent with blur</string>
+    <string name="surface_style_translucent">Translucent</string>
+    <string name="surface_style_solid">Solid</string>
+
+    <string-array name="surface_style_entries" translatable="false">
+        <item>@string/surface_style_blur</item>
+        <item>@string/surface_style_translucent</item>
+        <item>@string/surface_style_solid</item>
+    </string-array>
+
+    <!-- Must match SystemUI's SurfaceStyleRepository STYLE_ values -->
+    <string-array name="surface_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

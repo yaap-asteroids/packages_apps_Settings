@@ -120,7 +120,17 @@
             android:title="@string/monet_settings_title"
             android:summary="@string/monet_settings_summary"
             android:fragment="com.android.settings.display.MonetSettings" />
-        
+
+        <!-- How the shade and other system surfaces sit over what is behind them -->
+        <com.yasp.settings.preferences.SecureSettingListPreference
+            android:key="systemui_surface_style"
+            android:title="@string/surface_style_title"
+            android:summary="%s"
+            android:dialogTitle="@string/surface_style_title"
+            android:entries="@array/surface_style_entries"
+            android:entryValues="@array/surface_style_values"
+            android:defaultValue="0" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
