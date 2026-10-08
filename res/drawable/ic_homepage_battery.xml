@@ -18,10 +18,12 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item>
-        <com.android.settingslib.widget.AdaptiveIconShapeDrawable
-            android:width="@dimen/dashboard_tile_image_size"
-            android:height="@dimen/dashboard_tile_image_size"
-            android:color="@color/homepage_battery_background" />
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/dashboard_tile_image_size"
+                android:height="@dimen/dashboard_tile_image_size" />
+            <solid android:color="@color/homepage_battery_background" />
+        </shape>
     </item>
 
     <item
