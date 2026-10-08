@@ -10,12 +10,27 @@
     <string name="surface_style_translucent">Translucent</string>
     <string name="surface_style_solid">Solid</string>
 
-    <!-- Display: One UI style extras -->
-    <string name="oneui_category_title">One UI style</string>
+    <!-- Display: One UI style & Dynamic Island extras -->
+    <string name="oneui_settings_title">Quick Settings &amp; Dynamic Island</string>
+    <string name="oneui_settings_summary">Customize Quick Settings sliders and Dynamic Island positioning</string>
+
+    <string name="dynamic_island_category_title">Dynamic Island</string>
+    <string name="dynamic_island_title">Dynamic island</string>
+    <string name="dynamic_island_summary">Show calls, timers and other live activities around the camera</string>
     <string name="island_notifications_title">Notifications in the island</string>
     <string name="island_notifications_summary">Pop new notifications out of the island instead of a banner. Long press for the full notification.</string>
     <string name="island_glow_title">Island glow</string>
     <string name="island_glow_summary">Glow in the app\'s colour around the island</string>
+    <string name="island_offset_x_title">Horizontal position offset</string>
+    <string name="island_offset_x_summary">Fine-tune island horizontal position relative to cutout</string>
+    <string name="island_offset_y_title">Vertical position offset</string>
+    <string name="island_offset_y_summary">Fine-tune island vertical position relative to cutout</string>
+    <string name="island_appear_scale_title">Island pop-in scale</string>
+    <string name="island_appear_scale_summary">Initial starting scale factor when expanding</string>
+    <string name="island_media_card_scale_title">Media card popup scale</string>
+    <string name="island_media_card_scale_summary">Scale factor for expanded media controls</string>
+
+    <string name="quick_settings_category_title">Quick Settings</string>
     <string name="oneui_qs_card_title">Quick Settings card</string>
     <string name="oneui_qs_card_summary">Show the Quick Settings tiles on a rounded card</string>
     <string name="oneui_qs_tile_labels_title">Tile labels</string>
@@ -24,10 +39,10 @@
     <string name="oneui_qs_buttons_on_top_summary">Show edit, settings and power above the Quick Settings tiles</string>
     <string name="oneui_brightness_pill_title">Brightness pill</string>
     <string name="oneui_brightness_pill_summary">Use a thick, round brightness slider</string>
-
-    <!-- Display: show live activities around the camera cutout -->
-    <string name="dynamic_island_title">Dynamic island</string>
-    <string name="dynamic_island_summary">Show calls, timers and other live activities around the camera</string>
+    <string name="oneui_brightness_pill_portrait_title">Brightness pill thickness (Portrait)</string>
+    <string name="oneui_brightness_pill_portrait_summary">Pill height when device is in portrait orientation</string>
+    <string name="oneui_brightness_pill_landscape_title">Brightness pill thickness (Landscape)</string>
+    <string name="oneui_brightness_pill_landscape_summary">Pill height when device is in landscape orientation</string>
 
     <string-array name="surface_style_entries" translatable="false">
         <item>@string/surface_style_blur</item>

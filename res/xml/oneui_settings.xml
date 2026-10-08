@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The yaap-asteroids Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/oneui_settings_title">
+
+    <PreferenceCategory
+        android:key="category_dynamic_island"
+        android:title="@string/dynamic_island_category_title">
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="systemui_dynamic_island"
+            android:title="@string/dynamic_island_title"
+            android:summary="@string/dynamic_island_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="systemui_island_notifications"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_notifications_title"
+            android:summary="@string/island_notifications_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="systemui_island_glow"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_glow_title"
+            android:summary="@string/island_glow_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSeekBarPreference
+            android:key="systemui_island_offset_x_dp"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_offset_x_title"
+            android:summary="@string/island_offset_x_summary"
+            android:max="50"
+            settings:min="-50"
+            settings:interval="1"
+            settings:defaultValue="0"
+            settings:units="dp"
+            settings:showSign="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSeekBarPreference
+            android:key="systemui_island_offset_y_dp"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_offset_y_title"
+            android:summary="@string/island_offset_y_summary"
+            android:max="50"
+            settings:min="-50"
+            settings:interval="1"
+            settings:defaultValue="0"
+            settings:units="dp"
+            settings:showSign="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSeekBarPreference
+            android:key="systemui_island_appear_scale_percent"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_appear_scale_title"
+            android:summary="@string/island_appear_scale_summary"
+            android:max="100"
+            settings:min="10"
+            settings:interval="5"
+            settings:defaultValue="60"
+            settings:units="%" />
+
+        <com.yasp.settings.preferences.SecureSettingSeekBarPreference
+            android:key="systemui_island_media_card_scale_percent"
+            android:dependency="systemui_dynamic_island"
+            android:title="@string/island_media_card_scale_title"
+            android:summary="@string/island_media_card_scale_summary"
+            android:max="100"
+            settings:min="10"
+            settings:interval="5"
+            settings:defaultValue="40"
+            settings:units="%" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_quick_settings"
+        android:title="@string/quick_settings_category_title">
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_qs_card"
+            android:title="@string/oneui_qs_card_title"
+            android:summary="@string/oneui_qs_card_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_qs_tile_labels"
+            android:title="@string/oneui_qs_tile_labels_title"
+            android:summary="@string/oneui_qs_tile_labels_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_qs_buttons_on_top"
+            android:title="@string/oneui_qs_buttons_on_top_title"
+            android:summary="@string/oneui_qs_buttons_on_top_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="oneui_brightness_pill"
+            android:title="@string/oneui_brightness_pill_title"
+            android:summary="@string/oneui_brightness_pill_summary"
+            android:defaultValue="true" />
+
+        <com.yasp.settings.preferences.SecureSettingSeekBarPreference
+            android:key="oneui_brightness_pill_size_portrait_dp"
+            android:dependency="oneui_brightness_pill"
+            android:title="@string/oneui_brightness_pill_portrait_title"
+            android:summary="@string/oneui_brightness_pill_portrait_summary"
+            android:max="72"
+            settings:min="24"
+            settings:interval="2"
+            settings:defaultValue="48"
+            settings:units="dp" />
+
+        <com.yasp.settings.preferences.SecureSettingSeekBarPreference
+            android:key="oneui_brightness_pill_size_landscape_dp"
+            android:dependency="oneui_brightness_pill"
+            android:title="@string/oneui_brightness_pill_landscape_title"
+            android:summary="@string/oneui_brightness_pill_landscape_summary"
+            android:max="72"
+            settings:min="24"
+            settings:interval="2"
+            settings:defaultValue="48"
+            settings:units="dp" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
